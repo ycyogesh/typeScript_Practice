@@ -21,7 +21,7 @@ console.log(employeeName);
 
 let fruits : string[] = ["Apple","Orange","Banana"];        // normal
 let fruits1 : Array<string> = ["Grapes","Pinapple","Guava"];  // generic array type
-let arr = [1,3,"Apple","Orange","Banana",true,false]        // this also can
+let arr = [1,3,"Apple","Orange","Banana",true,false]  ;      // this also can
 
 console.log(fruits);
 console.log(fruits1);
@@ -35,10 +35,23 @@ let ids : Array<number>;
 ids = [23,34,100,124,44];                   // number array
 console.log(ids);
 
-let values : (string | number)[] = [1,"Cucumber",2,"Custard Apple"]
-let values1 : Array<string | number> = [3,"Papaya",4,"Sapota"]
+let values : (string | number)[] = [1,"Cucumber",2,"Custard Apple"];
+let values1 : Array<string | number> = [3,"Papaya",4,"Sapota"];
 console.log(values);
 console.log(values1);
+
+
+
+// Tuple Datatype
+
+var employee : [number, string] = [1,"Deva"];
+var person : [number, string, boolean] = [2,"Stalin",true];
+var user : [number, string, boolean, number, string] = [3,"Shamili",true,22,"Admin"];
+
+console.log(employee);
+console.log(person);
+console.log(user);
+
 
 
 
