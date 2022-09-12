@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "tslib": "^2.4.0"
+  }
+}
