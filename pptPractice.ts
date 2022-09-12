@@ -47,12 +47,15 @@ console.log(values1);
 var employee : [number, string] = [1,"Deva"];
 var person : [number, string, boolean] = [2,"Stalin",true];
 var user : [number, string, boolean, number, string] = [3,"Shamili",true,22,"Admin"];
+employee.push(7,"Arun");        // Add elements in tuples
 
 console.log(employee);
 console.log(person);
 console.log(user);
 
-
+var employee1 : [number, string][];
+employee1 = [[4,"Karthi"],[5,"Dharani"],[6,"Vijay"]];
+console.log(employee1);
 
 
 
