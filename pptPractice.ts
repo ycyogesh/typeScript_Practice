@@ -11,5 +11,12 @@ console.log(third);
 console.log(fourth);
 
 
+// String type variables
+
+let employeeName : string = "Yogesh"
+console.log(employeeName);
+
+
 // 
+
 
