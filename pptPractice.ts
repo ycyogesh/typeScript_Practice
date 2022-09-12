@@ -17,6 +17,15 @@ let employeeName : string = "Yogesh"
 console.log(employeeName);
 
 
-// 
+// Array Datatype 
+
+let fruits : string[] = ["Apple","Orange","Banana"];        // normal
+let fruits1 : Array<string> = ["Apple","Orange","Banana"];  // generic array type
+let arr = [1,3,"Apple","Orange","Banana",true,false]        // this also can
+
+console.log(fruits);
+console.log(fruits1);
+console.log(arr);
+
 
 
