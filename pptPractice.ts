@@ -235,3 +235,9 @@ console.log(empObj1);
 console.log(empObj2);
 
 
+// Extending Interfaces
+
+interface IPerson{
+    name : string,
+    gender : string
+}
