@@ -88,3 +88,21 @@ console.log(printMedia.Newspaper);
 console.log(printMedia["Book"]);
 
 
+// Computed enum
+
+enum PrintMedia {
+    Newspaper = 1,
+    Newsletter = getPrintMediaCode("NEWSLETTER"),
+    Magazine = Newsletter * 5,
+    Book = 5
+}
+
+function getPrintMediaCode(mediaName : string) : number{
+    if(mediaName ==="NEWSLETTER"){
+        return 5;
+    }
+    return 0;
+}
+console.log(PrintMedia.Newsletter);
+console.log(PrintMedia.Magazine);
+
