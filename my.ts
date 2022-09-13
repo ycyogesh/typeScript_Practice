@@ -42,3 +42,5 @@ console.log(c);
 c.forEach(data=>{
     console.log(data);
 })
+
+

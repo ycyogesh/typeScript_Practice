@@ -32,3 +32,6 @@ function forLoop(c) {
 }
 var c = forLoop(12);
 console.log(c);
+c.forEach(function (data) {
+    console.log(data);
+});
