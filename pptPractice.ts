@@ -218,8 +218,8 @@ interface IStringList{
 // Optional Property
 
 interface IEmployee{
-    empCode : number;
-    empName : string;
+    empCode? : number;
+    empName? : string;
     empDept? : string;
 }
 let empObj1 : IEmployee = {
@@ -238,6 +238,15 @@ console.log(empObj2);
 // Extending Interfaces
 
 interface IPerson{
-    name : string,
-    gender : string
+    name? : string,
+    gender? : string
 }
+interface IEmployee extends IPerson{
+    empId? : number
+}
+let empObj3 : IEmployee = {
+    name : "Dharani",
+    empId : 1,
+    gender : "Male"
+}
+console.log(empObj3);
