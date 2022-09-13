@@ -136,5 +136,14 @@ let Sum = function(x:number, y:number) : number{
 }
 console.log(Sum(5,7));
 
+// Function Parameteres
+
+function Greet(greeting : string, name : string) : string{
+    return greeting + " " + name + "!";
+}
+console.log(Greet("Hi","Deva"));
+console.log(Greet("Hello","YC"));
+console.log(Greet("Welcome","Karthi"));
+
 
 
