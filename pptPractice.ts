@@ -106,3 +106,4 @@ function getPrintMediaCode(mediaName : string) : number{
 console.log(PrintMedia.Newsletter);
 console.log(PrintMedia.Magazine);
 
+
