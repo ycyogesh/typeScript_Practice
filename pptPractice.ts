@@ -41,7 +41,6 @@ console.log(values);
 console.log(values1);
 
 
-
 // Tuple Datatype
 
 var employee : [number, string] = [1,"Deva"];
@@ -75,5 +74,17 @@ function getFruits(fruit : string) : fruitName{
 
 let getFruitName : fruitName = getFruits("deva");
 console.log(getFruitName);
+
+
+// String enum
+
+enum printMedia{
+    Newspaper = "NEWSPAPER",
+    Newsletter = "NEWSLETTER",
+    Magazine = "MAGAZINE",
+    Book = "BOOK"
+}
+console.log(printMedia.Newspaper);
+console.log(printMedia["Book"]);
 
 
