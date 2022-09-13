@@ -185,3 +185,15 @@ interface KeyValueProcessor{
 function addKeyValue(key:number, value:string):void{
     console.log("addKeyValue : key = "+ key + ", value = "+ value);
 }
+
+function updateKeyValue(key:number, value:string):void{
+    console.log("updateKeyValue : key = "+ key + ", value = "+ value);
+}
+
+let kvp:KeyValueProcessor = addKeyValue;
+kvp(1,"Uma");
+
+let kvp1:KeyValueProcessor = updateKeyValue;
+kvp1(2,"Dharani");
+
+
