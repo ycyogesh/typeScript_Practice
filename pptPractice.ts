@@ -155,5 +155,14 @@ console.log(Greetings("Hi","Deva"));
 console.log(Greetings("Hello"));
 // console.log(Greetings("Welcome","Shamili"));
 
+// Function Overloading
 
+function add(a:number, b:number) : number;
+function add(a:string, b:string) : string;
 
+function add(a:any, b:any) : any{
+    return a+b;
+}
+
+console.log(add("Hii ","Deva"));
+console.log(add(100,20));
