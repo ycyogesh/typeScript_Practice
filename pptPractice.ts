@@ -265,4 +265,6 @@ let personObj : Citizen = {
 console.log(personObj);
 
 
+// Implmenting an Interface
+
 
