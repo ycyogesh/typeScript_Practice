@@ -23,3 +23,12 @@ else {
 for (var i = 5; i < 10; i++) {
     console.log(i);
 }
+function forLoop(c) {
+    var b = [];
+    for (var i = 2; i < c; i++) {
+        b.push(i);
+    }
+    return b;
+}
+var c = forLoop(12);
+console.log(c);

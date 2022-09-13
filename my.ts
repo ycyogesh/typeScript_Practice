@@ -29,3 +29,13 @@ for(let i:number=5;i<10;i++){
    console.log(i);
 }
 
+function forLoop(c:number):number[]{
+    var b:number[]=[];
+    for(let i=2;i<c;i++){
+        b.push(i)
+    }
+    return b;
+}
+let c:number[]=forLoop(12);
+console.log(c);
+
