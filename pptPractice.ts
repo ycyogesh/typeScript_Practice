@@ -196,4 +196,25 @@ kvp(1,"Uma");
 let kvp1:KeyValueProcessor = updateKeyValue;
 kvp1(2,"Dharani");
 
+// Interface for Array
+
+interface NumList{
+    [index:number]:number;
+}
+
+let numArr:NumList = [1,2,3];
+console.log(numArr[0]);
+console.log(numArr[2]);
+
+interface IStringList{
+    [index:string]:string;
+}
+
+// let strArr:IStringList;
+// strArr["TS"] = "TypeScript";
+// strArr["JS"] = "Javascript";
+
+
+// Optional Property
+
 
