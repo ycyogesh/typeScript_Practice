@@ -166,3 +166,13 @@ function add(a:any, b:any) : any{
 
 console.log(add("Hii ","Deva"));
 console.log(add(100,20));
+
+// Rest Parameteres 
+
+function GreetRest(greeting : string, ...names : string[]){
+    return greeting + " " + names.join(",")+"!";
+}
+
+console.log(GreetRest("Hello","Deva","YC","Stalin","Karthi","Dharani"));
+
+
