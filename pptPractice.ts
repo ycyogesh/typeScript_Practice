@@ -141,9 +141,19 @@ console.log(Sum(5,7));
 function Greet(greeting : string, name : string) : string{
     return greeting + " " + name + "!";
 }
-console.log(Greet("Hi","Deva"));
-console.log(Greet("Hello","YC"));
-console.log(Greet("Welcome","Karthi"));
+console.log(Greet("Hi","Kruthika"));
+console.log(Greet("Hello","Uma"));
+console.log(Greet("Welcome","Shamili"));
+
+// Function Optional Paramater
+
+function Greetings(greeting : string, name? : string) : string{
+    return greeting + " " + name + "!";
+}
+
+console.log(Greetings("Hi","Deva"));
+console.log(Greetings("Hello"));
+// console.log(Greetings("Welcome","Shamili"));
 
 
 
