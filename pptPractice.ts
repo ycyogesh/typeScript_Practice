@@ -58,5 +58,22 @@ employee1 = [[4,"Karthi"],[5,"Dharani"],[6,"Vijay"]];
 console.log(employee1);
 
 
+// enum Datatype
+
+enum fruitName {
+    Apple = 1,
+    Orange,
+    Banana
+}
+
+function getFruits(fruit : string) : fruitName{
+    if(fruit === "yc" || fruit === "deva"){
+        return fruitName.Orange;
+    }
+    return 0;
+}
+
+let getFruitName : fruitName = getFruits("deva");
+console.log(getFruitName);
 
 
