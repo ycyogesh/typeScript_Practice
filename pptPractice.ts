@@ -60,7 +60,7 @@ console.log(employee1);
 // enum Datatype
 
 enum fruitName {
-    Apple = 1,
+    Apple,
     Orange,
     Banana
 }
@@ -106,4 +106,25 @@ function getPrintMediaCode(mediaName : string) : number{
 console.log(PrintMedia.Newsletter);
 console.log(PrintMedia.Magazine);
 
+
+// Heterogeneous enum
+
+enum Status {
+    Active = "ACTIVE",
+    Deactivate = 1,
+    Pending
+}
+
+
+
+
+// Assertion 
+
+let code : any = 123;
+let employeeCode = <number> code;   // using angular bracket
+console.log(employeeCode);
+
+let code1 : any = 123;
+let employeeCode1 = code1 as number;    // using as keyword
+console.log(employeeCode1);
 
