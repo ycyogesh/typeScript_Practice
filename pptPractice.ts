@@ -176,3 +176,12 @@ function GreetRest(greeting : string, ...names : string[]){
 console.log(GreetRest("Hello","Deva","YC","Stalin","Karthi","Dharani"));
 
 
+// Interface
+
+interface KeyValueProcessor{
+    (key:number, value:string):void;
+};
+
+function addKeyValue(key:number, value:string):void{
+    console.log("addKeyValue : key = "+ key + ", value = "+ value);
+}
