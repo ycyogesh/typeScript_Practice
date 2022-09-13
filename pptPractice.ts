@@ -112,9 +112,8 @@ console.log(PrintMedia.Magazine);
 enum Status {
     Active = "ACTIVE",
     Deactivate = 1,
-    Pending
+    Pending = "YES"
 }
-
 
 
 
@@ -127,4 +126,15 @@ console.log(employeeCode);
 let code1 : any = 123;
 let employeeCode1 = code1 as number;    // using as keyword
 console.log(employeeCode1);
+
+
+// Function 
+// Function with parameter and return types
+
+let Sum = function(x:number, y:number) : number{
+    return x+y;
+}
+console.log(Sum(5,7));
+
+
 
