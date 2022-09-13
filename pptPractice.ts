@@ -250,3 +250,19 @@ let empObj3 : IEmployee = {
     gender : "Male"
 }
 console.log(empObj3);
+
+
+// Readonly Properties
+
+interface Citizen {
+    name : string;
+    readonly SSN : number;
+}
+let personObj : Citizen = {
+    SSN : 125304445,
+    name : "Arun"
+}
+console.log(personObj);
+
+
+
