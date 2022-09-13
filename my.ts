@@ -39,3 +39,6 @@ function forLoop(c:number):number[]{
 let c:number[]=forLoop(12);
 console.log(c);
 
+c.forEach(data=>{
+    console.log(data);
+})
