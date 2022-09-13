@@ -217,4 +217,21 @@ interface IStringList{
 
 // Optional Property
 
+interface IEmployee{
+    empCode : number;
+    empName : string;
+    empDept? : string;
+}
+let empObj1 : IEmployee = {
+    empCode : 1,
+    empName : "Deva"
+}
+let empObj2 : IEmployee = {
+    empCode : 2,
+    empName : "Stalin",
+    empDept : "Mech"
+}
+console.log(empObj1);
+console.log(empObj2);
+
 
