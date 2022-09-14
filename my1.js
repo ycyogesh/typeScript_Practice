@@ -10,7 +10,8 @@ else{
 a = [1,2,3,7]
 // b = a                    // changed old(a) array
 // b = Object.assign(a)     // changed old(a) array
-b = [...a]               // not changed the old(a) array     correct method
+// b = [...a]               // not changed the old(a) array     correct method
+b = JSON.parse(JSON.stringify(a))   // not changed the old(a) array     good method
 
 b[2] = 8
 console.log(a);
@@ -22,3 +23,11 @@ function practice(passedArrray){
 }
 
 console.log(a);
+
+
+arrayNew = [[1,2,3],[4,5,6],[7,8,9]]
+
+newArray = [...arrayNew]
+newArray[1][2] = 200
+console.log(arrayNew);
+console.log(newArray);
