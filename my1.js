@@ -46,3 +46,4 @@ studentCopy[1].name = "yc"
 
 console.log(student);
 console.log(studentCopy);
+
