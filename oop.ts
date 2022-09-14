@@ -1,3 +1,4 @@
+let a : number = 10
 class Calculator{
     a : number;
     b : number;
@@ -7,6 +8,7 @@ class Calculator{
         this.b = b;
     }
     sum(){
+        // return a;
         return this.a + this.b;
     }
 
