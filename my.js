@@ -28,6 +28,7 @@ function forLoop(c) {
     for (var i_2 = 2; i_2 < c; i_2++) {
         b.push(i_2);
     }
+    console.log(a);
     return b;
 }
 var c = forLoop(12);
@@ -38,7 +39,17 @@ c.forEach(function (data) {
 var d = 1;
 var e = "Deva";
 var f = true;
-var g = [1, 2, 3];
+var g = [1, 2, 3]; // not a good one
 var h = { "name": "yc", "id": 3 };
-var i = [1, 2, 3];
+var i = [1, 2, 3]; // good one for optimise
+i.push(3, 4, 5);
+g.push();
+console.log(i);
+console.log(g);
 console.log(typeof (d), typeof (e), typeof (f), typeof (g), typeof (h), typeof (i));
+// if(0 == []){
+//     console.log("True");
+// }
+// else{
+//     console.log("False");
+// }

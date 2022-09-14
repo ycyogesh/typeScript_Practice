@@ -31,13 +31,14 @@ for(let i:number=5;i<10;i++){
 }
 
 function forLoop(c:number):number[]{
-    var b:number[]=[];
+    var b:Array<number>=[];
     for(let i=2;i<c;i++){
         b.push(i)
     }
+    console.log(a);  
     return b;
 }
-let c:number[]=forLoop(12);
+let c:Array<number>=forLoop(12);
 console.log(c);
 
 c.forEach(data=>{
@@ -64,3 +65,5 @@ console.log(typeof(d),typeof(e),typeof(f),typeof(g),typeof(h),typeof(i));
 // else{
 //     console.log("False");
 // }
+
+

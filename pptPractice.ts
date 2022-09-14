@@ -287,6 +287,8 @@ class Employee implements IEmployee1{
 }
 let emp = new Employee(1,"Shamili");
 console.log(emp);
+console.log(emp.getSalary(1));
+
 
 
 
