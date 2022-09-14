@@ -78,14 +78,25 @@ abc(1,"2");
 abc(3);
 abc(1,4);
 
+// Single Dimension Array Reduce Function
 
-function sum(...a : number[][]):number[]{
-    return a.reduce((a,b)=>a.concat(b));
+function sum(...a : number[]):number{
+   return a.reduce((a,b)=>a+b)
+   
 }
 let l = [[1,2,3],[1,2,4]];
-// let b : Array<number> = [2,3,4,5,6,7]
-let total : number[]= sum(...l);
+let total : number = sum(1,2,3)
 console.log(total);
+
+// Multi Dimension Array Reduce Function
+
+function concateArray(...a : number[][]):number[]{
+    return a.reduce((a,b)=>a.concat(b));
+}
+
+let total1 : number[] = concateArray(...l);
+console.log(total1);
+ 
 
 
 // console.log(...l);
