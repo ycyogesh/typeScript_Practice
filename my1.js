@@ -28,7 +28,10 @@ console.log(a);
 arrayNew = [[1,2,3],[4,5,6],[7,8,9]]
 
 // newArray = [...arrayNew]         // changed the old array
-newArray = JSON.parse(JSON.stringify(arrayNew))     // not changed the old array
+newArray = JSON.parse(JSON.stringify(arrayNew))     // not changed the old array    // safest
 newArray[1][2] = 200
 console.log(arrayNew);
 console.log(newArray);
+
+// if 1D array spread is enough [...name]
+// if 2D array JSON stringify is best
