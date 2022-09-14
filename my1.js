@@ -35,3 +35,14 @@ console.log(newArray);
 
 // if 1D array spread is enough [...name]
 // if 2D array JSON stringify is best
+
+
+student = [{"name" : "dharani","id" : 1},
+{"name" : "karthi","id" : 2},
+{"name" : "surya","id" : 3}]
+// studentCopy = [...student]       // changed both
+studentCopy = JSON.parse(JSON.stringify(student))       // not changed the old
+studentCopy[1].name = "yc"
+
+console.log(student);
+console.log(studentCopy);
