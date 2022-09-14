@@ -17,6 +17,7 @@ enum myEnum {
     deva,
     stalin
 }
+
 if(a == 1){
     console.log("True");
 }
@@ -44,3 +45,22 @@ c.forEach(data=>{
 })
 
 
+let d = 1;
+let e = "Deva";
+let f = true;
+let g = [1,2,3];        // not a good one
+let h = {"name" : "yc","id" : 3};
+let i:Array<number> = [1,2,3];      // good one for optimise
+i.push(3,4,5);
+g.push();
+console.log(i);
+console.log(g);
+
+console.log(typeof(d),typeof(e),typeof(f),typeof(g),typeof(h),typeof(i));
+
+// if(0 == []){
+//     console.log("True");
+// }
+// else{
+//     console.log("False");
+// }

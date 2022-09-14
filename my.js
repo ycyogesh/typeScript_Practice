@@ -20,13 +20,13 @@ if (a == 1) {
 else {
     console.log("False");
 }
-for (var i = 5; i < 10; i++) {
-    console.log(i);
+for (var i_1 = 5; i_1 < 10; i_1++) {
+    console.log(i_1);
 }
 function forLoop(c) {
     var b = [];
-    for (var i = 2; i < c; i++) {
-        b.push(i);
+    for (var i_2 = 2; i_2 < c; i_2++) {
+        b.push(i_2);
     }
     return b;
 }
@@ -35,3 +35,10 @@ console.log(c);
 c.forEach(function (data) {
     console.log(data);
 });
+var d = 1;
+var e = "Deva";
+var f = true;
+var g = [1, 2, 3];
+var h = { "name": "yc", "id": 3 };
+var i = [1, 2, 3];
+console.log(typeof (d), typeof (e), typeof (f), typeof (g), typeof (h), typeof (i));

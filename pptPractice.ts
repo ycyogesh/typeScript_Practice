@@ -270,7 +270,7 @@ console.log(personObj);
 interface IEmployee1 {
     empCode : number;
     name : string;
-    getSalary : (arg0: number)=>number;
+    getSalary : (number: number)=>number;
 }
 
 class Employee implements IEmployee1{
