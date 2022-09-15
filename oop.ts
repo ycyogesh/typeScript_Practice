@@ -47,3 +47,27 @@ console.log(c.multiply());
 
 // }
 
+
+class A{
+    a : number;
+    constructor(a:number);
+    constructor(a:number){
+     this.a = a;   
+    }
+    extend(e:number){
+        return this.a * e;
+    }
+    concatFun(a : number, b : number){
+        this.a = a;             // swap down and check the answer
+        b = this.extend(b)
+        return this.a + b;
+    }
+}
+
+let newObject : A = new A(4);
+console.log(newObject.extend(5));
+console.log(newObject.concatFun(5,6));
+console.log(newObject.a);
+
+
+
