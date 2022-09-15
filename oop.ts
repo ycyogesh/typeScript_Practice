@@ -35,10 +35,10 @@ class Calculator{
     }
 }
 let c : Calculator = new Calculator(2,4);
-console.log(c.a);
-console.log(c.b);
-console.log(c.sum());
-console.log(c.multiply());
+// console.log(c.a);
+// console.log(c.b);
+// console.log(c.sum());
+// console.log(c.multiply());
 
 // function abc(a : number){
 
@@ -49,13 +49,18 @@ console.log(c.multiply());
 
 
 class A{
-    a : number;
-    constructor(a:number);
-    constructor(a:number){
-     this.a = a;   
+    a : number | string;
+    constructor(a : number);
+    constructor(b : string);
+    constructor(a:number | string){
+     this.a = a; 
     }
+
     extend(e:number){
-        return this.a + e;
+        if(typeof(this.a) == "number"){
+            return this.a + e;
+        }
+        return 0;
     }
     concatFun(a : number, b : number){
         let v = this.extend(b)
