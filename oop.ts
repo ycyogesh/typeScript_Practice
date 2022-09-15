@@ -55,19 +55,26 @@ class A{
      this.a = a;   
     }
     extend(e:number){
-        return this.a * e;
+        return this.a + e;
     }
     concatFun(a : number, b : number){
-        this.a = a;             // swap down and check the answer
-        b = this.extend(b)
-        return this.a + b;
+        let v = this.extend(b)
+        this.a = a;             // swap up and check the answer     // this is correct
+        return this.a * v;
+    }
+    concatFunSwap(a : number, b : number){
+        this.a = a;             // swap down and check the answer     // this is wrong
+        let v = this.extend(b)
+        return this.a * v;
     }
 }
 
 let newObject : A = new A(4);
 console.log(newObject.extend(5));
+console.log(newObject.a);
 console.log(newObject.concatFun(5,6));
 console.log(newObject.a);
+// console.log(newObject.concatFunSwap(5,6));
 
 
 
