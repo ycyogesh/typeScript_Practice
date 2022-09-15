@@ -81,5 +81,9 @@ console.log(newObject.concatFun(5,6));
 console.log(newObject.a);
 // console.log(newObject.concatFunSwap(5,6));
 
+class B extends A{
 
-
+    constructor(a: number){
+        super(a);
+    }
+}
