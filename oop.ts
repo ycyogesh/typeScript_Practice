@@ -56,7 +56,7 @@ class A{
      this.a = a; 
     }
 
-    extend(e:number){
+    extend(e:number):number{
         if(typeof(this.a) == "number"){
             return this.a + e;
         }
@@ -83,7 +83,35 @@ console.log(newObject.a);
 
 class B extends A{
 
-    constructor(a: number){
+    b! : string;
+    constructor(a : number,b? : string);
+    constructor(a : number,b? : string){
         super(a);
+        if(b!= null && typeof(b)== "string"){
+            this.b = b;
+        }
+    }
+    extend(e : number):number{
+        if(typeof(this.a)=="number"){
+        return  e * this.a;
+        }
+        return 0;
+    }
+    myChild(s : number){
+        return s;
     }
 }
+// let newObjectB : A = new B(6);       Take only common properties
+let newObjectB : B = new B(6);
+
+
+console.log(newObjectB.concatFun(3,6));
+console.log(newObjectB.a);
+console.log(newObjectB.extend(5));
+// console.log(newObject.myChild(5));
+console.log(newObjectB.myChild(100));
+
+
+
+
+
